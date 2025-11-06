@@ -1,8 +1,8 @@
 import pandas as pd
 
 df = pd.read_csv("./sales_data_sample.csv", encoding = "latin1") # if without encoding through some error then we wrote encoding = "latin1" or encoding = "utf-8"
-# For excel file we wrote df = pd.read_excel("./sales_data_sample.xlsx")
-# For json file we wrote df = pd.read_json("./sales_data_sample.json")
+# For excel file we wrote df = pd.read_excel("./sales_data_sample.xlsx") 
+# For json file we wrote df = pd.read_json("./sales_data_sample.json") 
 
 print(df) 
            # 1           10121               34      81.35  ...          Henriot              Paul    Small
