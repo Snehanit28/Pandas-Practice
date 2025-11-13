@@ -7,7 +7,7 @@ data = {
     "Salary":[45000,52000,60000,49000,75000,30000,35000],
     "Performance Score":[85,79,82,87,98,92,80]
 }
-df = pd.DataFrame(data)
+df = pd.DataFrame(data) 
  
 print(f'Shape : {df.shape}')        # => Shape : (7, 5)
 print(df.columns)      # => Index(['Name', 'Age', 'City', 'Salary', 'Performance Score'], dtype='object')
