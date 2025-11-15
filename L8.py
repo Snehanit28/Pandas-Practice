@@ -14,7 +14,7 @@ df = pd.DataFrame(data)
 
 high_salary = df[df['Salary']>50000]
 print(high_salary)
-
+ 
 # Using AND condition
 
 filtered_and = df[(df['Age']>30) & (df['Salary']>50000)]
