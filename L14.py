@@ -21,23 +21,23 @@ print(df)
                 # => 6   Sonia  20.0  31000.0               80.0
 print('--------------------------------------------------------------------------------------------------------------------------------')
 
-df.fillna(0,inplace=True)
-print(df)                 # => it fills the None value with some value, here the value is 0
-                # =>      Name   Age   Salary  Performance Score
-                # => 0     Ram  25.0  45000.0               85.0
-                # => 1       0  36.0  60000.0                0.0
-                # => 2    Amit  28.0  49000.0               82.0
-                # => 3   Aditi   0.0  75000.0               87.0
-                # => 4   Karan  48.0      0.0               98.0
-                # => 5  Aditya  19.0  30000.0               92.0
-                # => 6   Sonia  20.0  31000.0               80.0
-print('--------------------------------------------------------------------------------------------------------------------------------')
+# df.fillna(0,inplace=True)
+# print(df)                 ## => it fills the None value with some value, here the value is 0
+##                 =>      Name   Age   Salary  Performance Score
+##                 => 0     Ram  25.0  45000.0               85.0
+##                 => 1       0  36.0  60000.0                0.0
+##                 => 2    Amit  28.0  49000.0               82.0
+##                 => 3   Aditi   0.0  75000.0               87.0
+##                 => 4   Karan  48.0      0.0               98.0
+##                 => 5  Aditya  19.0  30000.0               92.0
+##                 => 6   Sonia  20.0  31000.0               80.0
+#print('--------------------------------------------------------------------------------------------------------------------------------')
 
 
 
-#df['Age'].fillna(df['Age'].mean(),inplace=True)
-# df['Salary'].fillna(df['Salary'].mean(), inplace=True)
-# df['Performance Score'].fillna(df['Performance Score'].mean(), inplace=True)
+df['Age'].fillna(df['Age'].mean() , inplace=True)
+df['Salary'].fillna(df['Salary'].mean() , inplace=True)
+df['Performance Score'].fillna(df['Performance Score'].mean() , inplace=True)
 ## df.fillna({'Age': df['Age'].mean()}, inplace=True)
 ## df['Age'] = df['Age'].fillna(df['Age'].mean())
 
