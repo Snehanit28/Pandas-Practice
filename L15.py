@@ -10,6 +10,7 @@ data = {
 df = pd.DataFrame(data)
 print(df)
 print("----------------------------------------------------------------------------------------------------------------------------------------")
+
 df['Value'] = df['Value'].interpolate(method='linear')
 print(df)                 # => it is only used in numerical data
 
