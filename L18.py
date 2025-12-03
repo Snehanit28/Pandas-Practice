@@ -35,3 +35,15 @@ print(grouped1)
             # => 36   Amit      60000
             # => 48   Karan     75000
             # => Name: Salary, dtype: int64
+
+grouped2 = df.groupby(["Name","Salary"])["Age"].sum()
+print(grouped2)
+            # => Name      Salary
+            # => Aditi     39000      28
+            # => Aditya    50000      19
+            # => Amit      60000      36
+            # => Karan     75000      48
+            # => Ram       55000      28
+            # => Shyam     50000      21
+            # => Sonia     31000      20
+            # => Name: Salary, dtype: int64
